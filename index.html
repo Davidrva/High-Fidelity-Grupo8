@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <title>CORRUPOLY</title>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/CSS" href="css/styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const searchInput = document.querySelector('.search input[type="text"]');
+
+            searchInput.addEventListener("focus", function () {
+                if (searchInput.value === "Buscar") {
+                    searchInput.value = "";
+                }
+            });
+
+            searchInput.addEventListener("blur", function () {
+                if (searchInput.value.trim() === "") {
+                    searchInput.value = "Buscar";
+                } else {
+                    searchInput.value = "Buscar";
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="css/logo.jpg" />
+        <menu
+            style="width: 692px; height: 100%; justify-content: flex-start; align-items: center; gap: 15px; display: flex;">
+            <div
+                style="width: 107px; height: 100%; padding-left: 30px; padding-right: 30px; background: #0C222E; justify-content: center; align-items: center; gap: 10px; display: flex">
+                <a href="#" style="color: #FBF7F7; font-size: 18px;font-weight: 550;">HOME</a>
+            </div>
+            <a href="#contexto">CONTEXTO</a>
+            <a href="#comoJuega">¿CÓMO JUGAR?</a>
+            <a href="#aboutUS">ACERCA DE NOSOTROS</a>
+            <a href="#contacto">CONTÁCTANOS</a>
+            <a href="#">?</a>
+        </menu>
+        <div class="search">
+            <form>
+                <input type="text" value="Buscar">
+                <input type="button" value="O" src="https://via.placeholder.com/35x35">
+            </form>
+        </div>
+    </header>
+
+    <div class="home" id="home">
+        <div
+            style="text-align: center; color: #130985; padding-bottom: 40px; font-size: 55px; font-family: Lusitana; font-weight: 400; word-wrap: break-word">
+            CORRUPOLY</div>
+        <div
+            style="justify-content: center; margin: 0px auto; padding-bottom: 65px; align-items: center; display: flex;">
+            <div
+                style="width: 606px; height: auto; text-align: center; flex-direction: column; color: black; font-size: 30px; font-family: Poppins; font-weight: 250; word-wrap: break-word;">
+                <div style="padding-bottom: 30px;"> ES UN JUEGO DE MESA ESTRATÉGICO DONDE LOS JUGADORES ASUMEN EL PAPEL
+                    DE AUTORIDADES CORRUPTAS QUE
+                    BUSCAN ACUMULAR PODER Y RIQUEZAS A TRAVÉS DE ACCIONES ILEGALES Y POCO ÉTICAS. </div>
+                <div class="button">
+                    <a href="#"
+                        style="text-align: center; color: white; font-size: 18px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+                        Conocer más</a>
+                </div>
+            </div>
+            <img style="width: 548px;" src="css/tablero.png" />
+        </div>
+        <div style="width: 100%; text-align: center;">
+            <img style="width: 1200px;" src="css/portada.jpg" />
+        </div>
+    </div>
+
+    <div class="contexto" id="contexto">
+        <div class="titulo">HISTORIA</div>
+        <div class="parrafo" style="width: 70%;">
+            Se inspira en la triste realidad de la corrupción que ha afectado al Ecuador a lo largo de su historia.
+            Desde escándalos políticos hasta malversación de fondos, este juego de mesa estratégico busca generar
+            conciencia y reflexión sobre las consecuencias devastadoras de la corrupción en la sociedad.<br />Su
+            objetivo principal era educar a las personas sobre los peligros y las ramificaciones de la corrupción,
+            utilizando una plataforma lúdica y entretenida para transmitir un mensaje poderoso.</div>
+    </div>
+
+    <div class="comoJuega" id="comoJuega">
+        <div class="parrafo" style="width: 68%;">
+            El objetivo de "Corrupoly" es convertirse en el jugador más corrupto acumulando dinero y reputación a
+            través de acciones ilegales y poco éticas. Sin embargo, a medida que los jugadores avanzan en el juego,
+            se enfrentarán a las consecuencias y sanciones de sus actos corruptos, lo que les permitirá reflexionar
+            sobre los efectos perjudiciales que la corrupción tiene en la sociedad. Al final del juego, el jugador
+            que haya logrado acumular la mayor cantidad de dinero y reputación se considerará el ganador. </div>
+        <div
+            style="flex-direction: column; justify-content: flex-start; align-items: center; gap: 14px; display: inline-flex">
+            <div class="titulo">OBJETIVO DEL JUEGO</div>
+            <img style="width: 250px; height: auto" src="css/monopolio.jpg" />
+        </div>
+    </div>
+
+    <div class="aboutUS" id="aboutUS">
+        <div class="titulo" style="width: 240px;">ACERCA DE NOSOTROS</div>
+        <div class="parrafo" style="width: 69%;">
+            Nos complace darles la bienvenida a nuestro sitio. Somos un equipo de profesionales apasionados por el
+            desarrollo de páginas web y comprometidos con brindar soluciones digitales efectivas y
+            atractivas.<br />En el mundo de hoy, la Experiencia de Usuario (UX) juega un papel fundamental en el
+            éxito de cualquier plataforma en línea. Entendemos la importancia de crear interfaces intuitivas y
+            agradables que satisfagan las necesidades de nuestros usuarios. Por eso, nos enfocamos en seguir las
+            mejores prácticas y las leyes de UX para garantizar una experiencia única y
+            satisfactoria.<br /><br />¡Gracias por visitarnos y esperamos trabajar contigo pronto!</div>
+    </div>
+
+    <div class="contacto" id="contacto">
+        <div style="width: 871px; height: auto; background: #FCC17B;
+                box-shadow: 0px 25px 20px rgba(0, 0, 0, 0.50); border-radius: 10px; overflow: hidden">
+            <div
+                style="left: 109px; top: 34px; text-align: center; color: #0C222E; font-size: 45px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+                CONTACTO</div>
+            <img style="width: 96px; height: 96px; left: 398px; top: 20px;" src="https://via.placeholder.com/96x96" />
+            <div
+                style="height: 43px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px; left: 135px; top: 127.50px; background: #F6F6F6; box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); flex-direction: column; justify-content: center; align-items: center; gap: 21px; display: inline-flex">
+                <div
+                    style="align-self: stretch; color: rgba(0, 0, 0, 0.30); font-size: 22px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                    Nombres y apellidos</div>
+            </div>
+            <div
+                style="height: 43px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px; left: 135px; top: 209.50px; background: #F6F6F6; box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); flex-direction: column; justify-content: center; align-items: center; gap: 21px; display: inline-flex">
+                <div
+                    style="align-self: stretch; color: rgba(0, 0, 0, 0.30); font-size: 22px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                    Correo electrónico</div>
+            </div>
+            <div
+                style="height: 208px; padding-left: 20px; padding-right: 20px; padding-top: 5px; padding-bottom: 5px; left: 135px; top: 299px; background: #F6F6F6; box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25); flex-direction: column; justify-content: center; align-items: center; gap: 21px; display: inline-flex">
+                <div
+                    style="align-self: stretch; color: rgba(0, 0, 0, 0.30); font-size: 22px; font-family: Poppins; font-weight: 500; word-wrap: break-word">
+                    Mensaje<br /><br /><br /><br /><br /></div>
+            </div>
+            <div
+                style="width: 560px; height: 60px; padding-left: 67px; padding-right: 67px; padding-top: 21px; padding-bottom: 21px; left: 155px; top: 555px; background: #0C222E; box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.50); border-radius: 33px; overflow: hidden; justify-content: space-between; align-items: center; gap: 10px; display: inline-flex">
+                <div
+                    style="text-align: center; color: white; font-size: 22px; font-family: Poppins; font-weight: 600; word-wrap: break-word">
+                    ENVIAR</div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img style="width: 202px;" src="css/ludoLab.jpg" />
+        <img style="width: 171px;" src="css/epn.png" />
+        <img style="width: 293px;" src="css/redes.png" />
+    </footer>
+</body>
